@@ -11,7 +11,7 @@ function euclid(...args) {
     }
     a += b;
   }
-  console.log(a);
+  return a;
 }
 
-euclid(28, 16, 346, 5648);
+console.log(euclid(28, 16, 346, 5648));

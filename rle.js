@@ -16,7 +16,7 @@ const rle = (data) => {
     i += count - 1;
     count = 1;
   }
-  console.log(result);
+  return result;
 };
 
-rle("AVVVBBBVVXDHJFFFFDDDDDDHAAAAJJJDDSLSSSDDDD");
+console.log(rle("AVVVBBBVVXDHJFFFFDDDDDDHAAAAJJJDDSLSSSDDDD"));

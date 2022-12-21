@@ -4,7 +4,7 @@ const objects = [
 ];
 
 function zip(...data) {
-  const result = data.reduce((prevObj, currObj) => {
+  return data.reduce((prevObj, currObj) => {
     Object.keys(currObj).forEach((k) => {
       if (!prevObj[k]) {
         prevObj[k] = currObj[k];
@@ -12,7 +12,6 @@ function zip(...data) {
     });
     return prevObj;
   }, {});
-  console.log(result);
 }
 
-zip(...objects);
+console.log(zip(...objects));

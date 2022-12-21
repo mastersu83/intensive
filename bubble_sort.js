@@ -11,7 +11,7 @@ const bubbleSort = (arr) => {
       }
     }
   }
-  console.log(tmp);
+  return tmp;
 };
 
-bubbleSort(arr);
+console.log(bubbleSort(arr));
